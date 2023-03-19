@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 
 function AddUser({ dispatch, setBalance, balance }) {
@@ -5,7 +6,7 @@ function AddUser({ dispatch, setBalance, balance }) {
 
     function handleClick(e) {
         e.preventDefault();
-        // dispatch({ type: "add", name, setBalance, balance });
+        dispatch({ type: "add", name, setBalance, balance });
         setName("");
     }
 
